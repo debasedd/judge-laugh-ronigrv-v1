@@ -52,7 +52,7 @@ def main() -> None:
     os.chmod(out_path, 0o644)
     with open(out_path, "rb") as f:
         assert f.read() == encoded, "entry.txt does not match LINE"
-    print(f"{LINE} ({len(encoded)} chars)")
+    print(f"{LINE} ({len(LINE)} chars, {len(encoded)} bytes)")
 
 
 if __name__ == "__main__":
